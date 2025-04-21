@@ -1,0 +1,50 @@
+overlay: 1.0.0
+x-speakeasy-jsonpath: rfc9535
+info:
+  title: Speakeasy Modifications
+  version: 0.0.2
+  x-speakeasy-metadata:
+    after: ""
+    before: ""
+    type: speakeasy-modifications
+actions:
+  - target: $["paths"]["/disburse"]["post"]
+    update:
+      x-speakeasy-group: payments
+      x-speakeasy-name-override: disburse
+    x-speakeasy-metadata:
+      after: sdk.payments.disburse()
+      before: sdk.<no_group>.post_/disburse()
+      created_at: 1745238656378
+      reviewed_at: 1745238665412
+      type: method-name
+  - target: $["paths"]["/availability"]["get"]
+    update:
+      x-speakeasy-group: availability
+      x-speakeasy-name-override: get
+    x-speakeasy-metadata:
+      after: sdk.availability.get()
+      before: sdk.<no_group>.get_/availability()
+      created_at: 1745238656378
+      reviewed_at: 1745238665412
+      type: method-name
+  - target: $["paths"]["/payments/{id}"]["get"]
+    update:
+      x-speakeasy-group: payments
+      x-speakeasy-name-override: getById
+    x-speakeasy-metadata:
+      after: sdk.payments.getById()
+      before: sdk.<no_group>.get_/payments/{id}()
+      created_at: 1745238656378
+      reviewed_at: 1745238665412
+      type: method-name
+  - target: $["paths"]["/collect"]["post"]
+    update:
+      x-speakeasy-group: payments
+      x-speakeasy-name-override: collect
+    x-speakeasy-metadata:
+      after: sdk.payments.collect()
+      before: sdk.<no_group>.post_/collect()
+      created_at: 1745238656378
+      reviewed_at: 1745238665412
+      type: method-name

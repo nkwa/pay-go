@@ -1,0 +1,38 @@
+speakeasyVersion: 1.535.1
+sources:
+    Nkwa Pay API:
+        sourceNamespace: nkwa-pay-api
+        sourceRevisionDigest: sha256:d1f98dfcda665b4644e90425e30c3ced545c6afc7ec456b0e10a6da674d8b00b
+        sourceBlobDigest: sha256:f4e69d06861d12543d68331c4f757058823f3dc8bd077070de5d5985009bb859
+        tags:
+            - latest
+            - 1.0.0
+targets:
+    pay:
+        source: Nkwa Pay API
+        sourceNamespace: nkwa-pay-api
+        sourceRevisionDigest: sha256:d1f98dfcda665b4644e90425e30c3ced545c6afc7ec456b0e10a6da674d8b00b
+        sourceBlobDigest: sha256:f4e69d06861d12543d68331c4f757058823f3dc8bd077070de5d5985009bb859
+        codeSamplesNamespace: nkwa-pay-api-go-code-samples
+        codeSamplesRevisionDigest: sha256:cfc0ffbd4f202dbe1b6d723077befcda83532a1c58ff7526b104fa925c9a9dc3
+workflow:
+    workflowVersion: 1.0.0
+    speakeasyVersion: latest
+    sources:
+        Nkwa Pay API:
+            inputs:
+                - location: /Users/ebaneck/Downloads/nkwa-pay-openapi.json
+            overlays:
+                - location: .speakeasy/speakeasy-modifications-overlay.yaml
+            registry:
+                location: registry.speakeasyapi.dev/nkwa/pay/nkwa-pay-api
+    targets:
+        pay:
+            target: go
+            source: Nkwa Pay API
+            codeSamples:
+                registry:
+                    location: registry.speakeasyapi.dev/nkwa/pay/nkwa-pay-api-go-code-samples
+                labelOverride:
+                    fixedValue: Go (SDK)
+                blocking: false
