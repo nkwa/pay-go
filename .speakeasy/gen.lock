@@ -1,12 +1,12 @@
 lockVersion: 2.0.0
 id: e9b7bcb8-8d0e-46fa-888f-4fc6e838b65f
 management:
-  docChecksum: 1faa8f5a30d8dfe334f169f797f6a296
+  docChecksum: 54bf69e3c617d4ab7d2cc86c0a6b7b03
   docVersion: 1.0.0
   speakeasyVersion: 1.535.1
   generationVersion: 2.585.2
-  releaseVersion: 0.1.2
-  configChecksum: 084f2a8f5dd2940cebaec129bdfe1321
+  releaseVersion: 0.1.4
+  configChecksum: f8331d4eb1991f7426518b28877970dc
 features:
   go:
     additionalDependencies: 0.1.0
@@ -106,7 +106,7 @@ examples:
   post_/collect:
     speakeasy-default-post-/collect:
       requestBody:
-        application/json: {"amount": 433642, "phoneNumber": "824.805.0012 x8298"}
+        application/json: {"amount": 433642, "phoneNumber": "237650000000"}
       responses:
         "201":
           application/json: {}
@@ -117,7 +117,7 @@ examples:
   post_/disburse:
     speakeasy-default-post-/disburse:
       requestBody:
-        application/json: {"amount": 410119, "phoneNumber": "923.242.7389 x02568"}
+        application/json: {"amount": 410119, "phoneNumber": "237650000000"}
       responses:
         "201":
           application/json: {}

@@ -319,7 +319,8 @@
             "type": "integer"
           },
           "phoneNumber": {
-            "type": "string"
+            "type": "string",
+            "example": "237650000000"
           }
         }
       },

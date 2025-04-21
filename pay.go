@@ -151,9 +151,9 @@ func New(opts ...SDKOption) *Pay {
 		sdkConfiguration: sdkConfiguration{
 			Language:          "go",
 			OpenAPIDocVersion: "1.0.0",
-			SDKVersion:        "0.1.2",
+			SDKVersion:        "0.1.4",
 			GenVersion:        "2.585.2",
-			UserAgent:         "speakeasy-sdk/go 0.1.2 2.585.2 1.0.0 github.com/nkwa/pay-go",
+			UserAgent:         "speakeasy-sdk/go 0.1.4 2.585.2 1.0.0 github.com/nkwa/pay-go",
 			Hooks:             hooks.New(),
 		},
 	}

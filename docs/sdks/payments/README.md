@@ -88,7 +88,7 @@ func main() {
 
     res, err := s.Payments.Collect(ctx, components.PaymentRequest{
         Amount: 433642,
-        PhoneNumber: "824.805.0012 x8298",
+        PhoneNumber: "237650000000",
     })
     if err != nil {
         log.Fatal(err)
@@ -145,7 +145,7 @@ func main() {
 
     res, err := s.Payments.Disburse(ctx, components.PaymentRequest{
         Amount: 410119,
-        PhoneNumber: "923.242.7389 x02568",
+        PhoneNumber: "237650000000",
     })
     if err != nil {
         log.Fatal(err)
