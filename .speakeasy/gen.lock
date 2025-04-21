@@ -1,0 +1,138 @@
+lockVersion: 2.0.0
+id: e9b7bcb8-8d0e-46fa-888f-4fc6e838b65f
+management:
+  docChecksum: 1faa8f5a30d8dfe334f169f797f6a296
+  docVersion: 1.0.0
+  speakeasyVersion: 1.535.1
+  generationVersion: 2.585.2
+  releaseVersion: 0.1.2
+  configChecksum: 084f2a8f5dd2940cebaec129bdfe1321
+features:
+  go:
+    additionalDependencies: 0.1.0
+    core: 3.7.4
+    defaultEnabledRetries: 0.2.0
+    devContainers: 2.90.0
+    envVarSecurityUsage: 0.3.2
+    flattening: 2.81.1
+    globalSecurity: 2.82.11
+    globalSecurityCallbacks: 0.1.0
+    globalSecurityFlattening: 0.1.0
+    globalServerURLs: 2.82.2
+    groups: 2.81.2
+    intellisenseMarkdownSupport: 0.1.0
+    nameOverrides: 2.81.2
+    responseFormat: 0.1.2
+    retries: 2.83.2
+    sdkHooks: 0.1.0
+generatedFiles:
+  - .devcontainer/README.md
+  - .devcontainer/devcontainer.json
+  - .devcontainer/setup.sh
+  - .gitattributes
+  - /models/apierrors/httperror.go
+  - /models/components/availability.go
+  - /models/components/httpmetadata.go
+  - /models/components/payment.go
+  - /models/components/paymentrequest.go
+  - /models/components/paymentstatus.go
+  - /models/components/paymenttype.go
+  - /models/components/security.go
+  - /models/components/telecomoperator.go
+  - /models/operations/getavailability.go
+  - /models/operations/getpaymentsid.go
+  - /models/operations/postcollect.go
+  - /models/operations/postdisburse.go
+  - USAGE.md
+  - availability.go
+  - docs/models/apierrors/httperror.md
+  - docs/models/components/availability.md
+  - docs/models/components/httpmetadata.md
+  - docs/models/components/operation.md
+  - docs/models/components/operator.md
+  - docs/models/components/payment.md
+  - docs/models/components/paymentrequest.md
+  - docs/models/components/paymentstatus.md
+  - docs/models/components/paymenttype.md
+  - docs/models/components/security.md
+  - docs/models/components/status.md
+  - docs/models/components/telecomoperator.md
+  - docs/models/components/type.md
+  - docs/models/operations/getavailabilityresponse.md
+  - docs/models/operations/getpaymentsidrequest.md
+  - docs/models/operations/getpaymentsidresponse.md
+  - docs/models/operations/option.md
+  - docs/models/operations/postcollectresponse.md
+  - docs/models/operations/postdisburseresponse.md
+  - docs/sdks/availability/README.md
+  - docs/sdks/pay/README.md
+  - docs/sdks/payments/README.md
+  - go.mod
+  - internal/hooks/hooks.go
+  - internal/utils/contenttype.go
+  - internal/utils/env.go
+  - internal/utils/form.go
+  - internal/utils/headers.go
+  - internal/utils/json.go
+  - internal/utils/pathparams.go
+  - internal/utils/queryparams.go
+  - internal/utils/requestbody.go
+  - internal/utils/retries.go
+  - internal/utils/security.go
+  - internal/utils/utils.go
+  - models/apierrors/apierror.go
+  - models/operations/options.go
+  - pay.go
+  - payments.go
+  - retry/config.go
+  - types/bigint.go
+  - types/date.go
+  - types/datetime.go
+  - types/decimal.go
+  - types/pointers.go
+examples:
+  get_/payments/{id}:
+    speakeasy-default-get-/payments/{id}:
+      parameters:
+        path:
+          id: "96e9ed79-9fef-44a6-9435-0625338ca86a"
+      responses:
+        "200":
+          application/json: {}
+        "401":
+          application/json: {}
+        "500":
+          application/json: {}
+  post_/collect:
+    speakeasy-default-post-/collect:
+      requestBody:
+        application/json: {"amount": 433642, "phoneNumber": "824.805.0012 x8298"}
+      responses:
+        "201":
+          application/json: {}
+        "400":
+          application/json: {}
+        "500":
+          application/json: {}
+  post_/disburse:
+    speakeasy-default-post-/disburse:
+      requestBody:
+        application/json: {"amount": 410119, "phoneNumber": "923.242.7389 x02568"}
+      responses:
+        "201":
+          application/json: {}
+        "400":
+          application/json: {}
+        "500":
+          application/json: {}
+  get_/availability:
+    speakeasy-default-get-/availability:
+      responses:
+        "200":
+          application/json: [{}, {}, {}]
+        "401":
+          application/json: {}
+        "500":
+          application/json: {}
+examplesVersion: 1.0.1
+generatedTests: {}
