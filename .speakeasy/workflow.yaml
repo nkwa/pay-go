@@ -3,7 +3,7 @@ speakeasyVersion: latest
 sources:
     Nkwa Pay API:
         inputs:
-            - location: /Users/ebaneck/Downloads/nkwa-pay-openapi.json
+            - location: https://raw.githubusercontent.com/nkwa/pay-postman/refs/heads/main/openapi.json
         overlays:
             - location: .speakeasy/speakeasy-modifications-overlay.yaml
         registry:
