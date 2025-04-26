@@ -1,8 +1,8 @@
-speakeasyVersion: 1.535.1
+speakeasyVersion: 1.540.0
 sources:
     Nkwa Pay API:
         sourceNamespace: nkwa-pay-api
-        sourceRevisionDigest: sha256:54d5e1fe9d3845d421b68d4cdd8afc9a89c6d0732f97da30f0c88105970a1bf2
+        sourceRevisionDigest: sha256:771fc90d0fe70f45d27c526ee92d7992036857bc39b716091cc19e009520b825
         sourceBlobDigest: sha256:a8b91acbc0c3f3570fa07ab79494ae97df7178351d61d764e81ae5216adfe736
         tags:
             - latest
@@ -11,17 +11,17 @@ targets:
     pay:
         source: Nkwa Pay API
         sourceNamespace: nkwa-pay-api
-        sourceRevisionDigest: sha256:54d5e1fe9d3845d421b68d4cdd8afc9a89c6d0732f97da30f0c88105970a1bf2
+        sourceRevisionDigest: sha256:771fc90d0fe70f45d27c526ee92d7992036857bc39b716091cc19e009520b825
         sourceBlobDigest: sha256:a8b91acbc0c3f3570fa07ab79494ae97df7178351d61d764e81ae5216adfe736
         codeSamplesNamespace: nkwa-pay-api-go-code-samples
-        codeSamplesRevisionDigest: sha256:b240684904f12273be6a02cf0a8bb6b098e9517a8711f353cf6478f344987631
+        codeSamplesRevisionDigest: sha256:4b063ebcdbc7bd1b69d68345b31615408a79a865467847fb0b99bbe9202e2dd8
 workflow:
     workflowVersion: 1.0.0
     speakeasyVersion: latest
     sources:
         Nkwa Pay API:
             inputs:
-                - location: /Users/ebaneck/Downloads/nkwa-pay-openapi.json
+                - location: https://raw.githubusercontent.com/nkwa/pay-postman/refs/heads/main/openapi.json
             overlays:
                 - location: .speakeasy/speakeasy-modifications-overlay.yaml
             registry:
