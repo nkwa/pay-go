@@ -298,7 +298,7 @@ func main() {
 	ctx := context.Background()
 
 	s := paygo.New(
-		paygo.WithServerURL("https://api.staging.nkwapay.mynkwa.com"),
+		paygo.WithServerURL("https://api.pay.staging.mynkwa.com"),
 		paygo.WithSecurity(os.Getenv("PAY_API_KEY_AUTH")),
 	)
 
