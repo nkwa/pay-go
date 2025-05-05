@@ -16,7 +16,7 @@ import (
 // ServerList contains the list of servers available to the SDK
 var ServerList = []string{
 	// Staging server
-	"https://api.staging.nkwapay.mynkwa.com",
+	"https://api.pay.staging.mynkwa.com",
 }
 
 // HTTPClient provides an interface for suplying the SDK with a custom HTTP client
@@ -151,9 +151,9 @@ func New(opts ...SDKOption) *Pay {
 		sdkConfiguration: sdkConfiguration{
 			Language:          "go",
 			OpenAPIDocVersion: "1.0.0",
-			SDKVersion:        "0.1.9",
-			GenVersion:        "2.593.3",
-			UserAgent:         "speakeasy-sdk/go 0.1.9 2.593.3 1.0.0 github.com/nkwa/pay-go",
+			SDKVersion:        "0.1.10",
+			GenVersion:        "2.597.9",
+			UserAgent:         "speakeasy-sdk/go 0.1.10 2.597.9 1.0.0 github.com/nkwa/pay-go",
 			Hooks:             hooks.New(),
 		},
 	}

@@ -1,12 +1,14 @@
 lockVersion: 2.0.0
 id: e9b7bcb8-8d0e-46fa-888f-4fc6e838b65f
 management:
-  docChecksum: 54bf69e3c617d4ab7d2cc86c0a6b7b03
+  docChecksum: b85123af9cd6465aec2cb8a54b1a1339
   docVersion: 1.0.0
-  speakeasyVersion: 1.540.0
-  generationVersion: 2.593.3
-  releaseVersion: 0.1.9
-  configChecksum: c4644557e52ed051348a8b612f388492
+  speakeasyVersion: 1.542.1
+  generationVersion: 2.597.9
+  releaseVersion: 0.1.10
+  configChecksum: d94fc754af986318192bcf109476d82d
+  repoURL: https://github.com/nkwa/pay-go.git
+  installationURL: https://github.com/nkwa/pay-go
 features:
   go:
     additionalDependencies: 0.1.0
